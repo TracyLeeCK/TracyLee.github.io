@@ -35,14 +35,12 @@
 希望我们能够一起学习，一起成长。">
 
     
-    <link rel="alternative" href="RSS address." title="Tracy&#39;s blog" type="application/atom+xml">
+    
+    <link rel="icon" href="/img/favicon.ico">
     
     
-    <link rel="icon" href="/img/favicon3.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/img/logo.png">
-    <link rel="apple-touch-icon-precomposed" href="/img/logo.png">
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
     
     <link rel="stylesheet" href="../../../../css/style.css">
 </head>
@@ -66,18 +64,19 @@
 				<ul>
 					<ul>
 					 
-						<li><a href="/主页">Home</a></li>
+						<li><a href="/">Home</a></li>
 					
-						<li><a href="/目录">Archives</a></li>
+						<li><a href="/Archives">Archives</a></li>
 					
-						<li><a href="/关于">About</a></li>
+						<li><a href="/About">About</a></li>
 					
 					<li>
  					
-						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
-							<label>Search</label>
-						<input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="搜索"><br>
-						</form>
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:lichengkai.club">
+					</form>
 					
 					</li>
 				</ul>
@@ -89,6 +88,7 @@
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
+  <meta name="baidu-site-verification" content="6Rr7A3c46h" />
   <h1 itemprop="name">
     
       <a href="/2016/08/27/Hello World !/" title="Hello World !" itemprop="url">Hello World !</a>
@@ -128,31 +128,8 @@
 
 	<div class="article-share" id="share">
 	
-	<div class="share-jiathis">
-	  
-<div class="jiathis_style_24x24">
-	<a class="jiathis_button_tsina"></a>
-	<a class="jiathis_button_weixin"></a>
-	<a class="jiathis_button_renren"></a>
-	<a class="jiathis_button_qzone"></a>
-	<a class="jiathis_button_googleplus"></a>
-	<a class="jiathis_button_douban"></a>
-	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	<a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-    var jiathis_config={
-    data_track_clickback:true,
-    sm:"copy,renren,cqq",
-    pic:"",
-    summary:"",
-     ralateuid:{"tsina":"2531837614"},hideMore:false}
-    
-  </script> 
-<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
-" charset="utf-8"></script>      
-
-	 </div>
+	  <div data-url="lichengkai.club/2016/08/27/Hello World !/" data-title="Hello World ! | Tracy&#39;s blog" data-tsina="2531837614" class="share clearfix">
+	  </div>
 	
 	</div>
 
@@ -163,6 +140,10 @@
 	</article>
 	
 	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/08/27/Hello World !/" data-title="Hello World !" data-url="lichengkai.club/2016/08/27/Hello World !/"></div>
+</section>
+
 
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
@@ -191,7 +172,7 @@
         
           <li>
             
-            	<a href="https://www.campussay.com " target="_blank" title="交流干货，分享人生">校园说</a>
+            	<a href="https://www.campussay.com " target="_blank" title="交流干货，分享人生">CamupsSay校园说</a>
             
           </li>
         
@@ -225,8 +206,8 @@
 	
 	
 	<section class="info">
-		<p> 你好，我是李承凯，你可以叫我Tracy。 <br/>
-			我喜欢互联网和一些GEEK的东西，我励志成为一名优秀的互联网人</p>
+		<p> 你好，我是李承凯，你也可以叫我Tracy。 <br/>
+			我喜欢互联网和一些GEEK的东西，我立志成为一名优秀的互联网人</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
@@ -239,6 +220,8 @@
 		
 		
 		
+		
+		<a href="http://www.zhihu.com/people/li-cheng-kai-72" target="_blank" class="icon-zhihu" title="知乎"></a>
 		
 		
 		
@@ -336,7 +319,68 @@ $(document).ready(function(){
 </script>
 
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
 
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"tracy"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 
