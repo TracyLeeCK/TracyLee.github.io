@@ -23,7 +23,7 @@ Python 基础先来点开胃菜可能对于很多人">
 Python 基础先来点开胃菜可能对于很多人">
 <meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg">
 <meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg">
-<meta property="og:updated_time" content="2016-09-07T06:28:30.361Z">
+<meta property="og:updated_time" content="2016-09-07T06:33:09.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="产品经理学Python&&爬虫（二）：Python基础及爬虫入门">
 <meta name="twitter:description" content="写在前面我们在学习任何一门技术的时候，往往都会看很多技术博客，很多程序员也会写自己的技术博客。但是我想写的这些不是纯技术博客，我暂时也没有这个能力写出Python 或者爬虫相关的技术博客来。我只是作为一个初学Python 和爬虫的产品，把我学习的过程和心得记录下来，供大家参考。
@@ -108,11 +108,11 @@ Python 基础先来点开胃菜可能对于很多人">
 <h2 id="Python-基础"><a href="#Python-基础" class="headerlink" title="Python 基础"></a>Python 基础</h2><h3 id="先来点开胃菜"><a href="#先来点开胃菜" class="headerlink" title="先来点开胃菜"></a>先来点开胃菜</h3><p>可能对于很多人来说，Python 最大的特点就是“简短”。那么用Python 写程序到底有多短呢？举个栗子~</p>
 <p>我有两个室友，一个前端，一个后台。他们分别用JavaScript 和 C# 实现下面这个功能，需要多少行代码呢？</p>
 <blockquote>
-<p>输出 （0：100）之间的，【1X1, 2X2 ··· 100X100】中的 2 的倍数</p>
+<p>输出 （0：100）之间的，【1X1, 2X2 ··· 100X100】中 2 的倍数</p>
 </blockquote>
 <p>JavaScript 用了10行，C# 用了5行 （当然，这也跟他们当时的技术水平有关。一般来说，用任何语言实现这个功能应该都不需要10行代码）</p>
 <p>那么用Python 呢？只需要一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print [x * x for x in range(1, 100) if x % 2 == 0]</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> [x * x <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">100</span>) <span class="keyword">if</span> x % <span class="number">2</span> == <span class="number">0</span>]</div></pre></td></tr></table></figure>
 <p>Python 代码简短明确，相对来说比较好入门，适合在课余和工作之余 的时间去学习，所以大家不用担心自己没有时间。</p>
 <p><em>PS. 我无意比较各语言的好坏，我知道JAVA、C++ 的运行效率比Python 高很多，我也相信有大牛能够通过其他语言只用一行代码来实现。在此只是简述Python 简短易入门。</em></p>
 <a id="more"></a>
@@ -132,7 +132,7 @@ Python 基础先来点开胃菜可能对于很多人">
 <p>比如这个页面的部分文字和图片：</p>
 <p><img src="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg" alt=""></p>
 <p>其中包含文字和图片的代码是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;d_post_content j_d_post_content  clearfix&quot; id=&quot;post_content_97130702595&quot;&gt;         </div><div class="line">又要迎来活生生的小鲜肉们，又要注入新生命辣=-= 开学季需要更多交易!!房源、广告、兼职还有各色各样的寝室利器快快交易起来!!为了方便大家进行各种交易，请吧内所有【划重点】交易在此进行!!!单发将被删帖，请广大吧友注意注意注意。———————————————————————————————————本贴原则上只接受校友交易，禁止【划重点】微信代购淘宝链接等商业性质广告。允许租房信息发布、二手物品交易、正规兼职招聘（注意防范诈骗）以及正规广告发布。如果发现虚假信息和重复信息将会被删除。注意：请吧友自己鉴别真伪，吧务组不为此贴信息负责。———————————————————————————————————</div><div class="line">&lt;img width=&quot;300&quot; height=&quot;334&quot; class=&quot;BDE_Image&quot; style=&quot;cursor: url(http://tb2.bdstatic.com/tb/static-pb/img/cur_zin.cur), pointer;&quot; src=&quot;http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg&quot; size=&quot;9012&quot;&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d_post_content j_d_post_content  clearfix"</span> <span class="attr">id</span>=<span class="string">"post_content_97130702595"</span>&gt;</span>         </div><div class="line">又要迎来活生生的小鲜肉们，又要注入新生命辣=-= 开学季需要更多交易!!房源、广告、兼职还有各色各样的寝室利器快快交易起来!!为了方便大家进行各种交易，请吧内所有【划重点】交易在此进行!!!单发将被删帖，请广大吧友注意注意注意。———————————————————————————————————本贴原则上只接受校友交易，禁止【划重点】微信代购淘宝链接等商业性质广告。允许租房信息发布、二手物品交易、正规兼职招聘（注意防范诈骗）以及正规广告发布。如果发现虚假信息和重复信息将会被删除。注意：请吧友自己鉴别真伪，吧务组不为此贴信息负责。———————————————————————————————————</div><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"334"</span> <span class="attr">class</span>=<span class="string">"BDE_Image"</span> <span class="attr">style</span>=<span class="string">"cursor: url(http://tb2.bdstatic.com/tb/static-pb/img/cur_zin.cur), pointer;"</span> <span class="attr">src</span>=<span class="string">"http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg"</span> <span class="attr">size</span>=<span class="string">"9012"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>也就是说，只要我们爬到了网页的源代码，那么这个网页展示出来的（甚至隐藏掉的）所有信息，我们只要从源码中筛选就能够获取。</p>
 <p>所以一般爬虫的原理其实非常简单：</p>
 <ol>
