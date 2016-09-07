@@ -21,14 +21,15 @@ Python 基础先来点开胃菜可能对于很多人">
 <meta property="og:description" content="写在前面我们在学习任何一门技术的时候，往往都会看很多技术博客，很多程序员也会写自己的技术博客。但是我想写的这些不是纯技术博客，我暂时也没有这个能力写出Python 或者爬虫相关的技术博客来。我只是作为一个初学Python 和爬虫的产品，把我学习的过程和心得记录下来，供大家参考。
 我会给到我在学习过程中参考的技术博客链接，在此也对他们的无私奉献表示感谢。
 Python 基础先来点开胃菜可能对于很多人">
-<meta property="og:image" content="http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg">
-<meta property="og:updated_time" content="2016-09-07T06:23:23.553Z">
+<meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg">
+<meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg">
+<meta property="og:updated_time" content="2016-09-07T06:28:30.361Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="产品经理学Python&&爬虫（二）：Python基础及爬虫入门">
 <meta name="twitter:description" content="写在前面我们在学习任何一门技术的时候，往往都会看很多技术博客，很多程序员也会写自己的技术博客。但是我想写的这些不是纯技术博客，我暂时也没有这个能力写出Python 或者爬虫相关的技术博客来。我只是作为一个初学Python 和爬虫的产品，把我学习的过程和心得记录下来，供大家参考。
 我会给到我在学习过程中参考的技术博客链接，在此也对他们的无私奉献表示感谢。
 Python 基础先来点开胃菜可能对于很多人">
-<meta name="twitter:image" content="http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg">
+<meta name="twitter:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg">
 
     
     
@@ -107,10 +108,31 @@ Python 基础先来点开胃菜可能对于很多人">
 <h2 id="Python-基础"><a href="#Python-基础" class="headerlink" title="Python 基础"></a>Python 基础</h2><h3 id="先来点开胃菜"><a href="#先来点开胃菜" class="headerlink" title="先来点开胃菜"></a>先来点开胃菜</h3><p>可能对于很多人来说，Python 最大的特点就是“简短”。那么用Python 写程序到底有多短呢？举个栗子~</p>
 <p>我有两个室友，一个前端，一个后台。他们分别用JavaScript 和 C# 实现下面这个功能，需要多少行代码呢？</p>
 <blockquote>
-<p>输出 （0：100）之间的，【1X1, 2X2 <figure class="highlight plain"><figcaption><span>2 的倍数</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">JavaScript 用了10行，C# 用了5行 （当然，这也跟他们当时的技术水平有关。一般来说，用任何语言实现这个功能应该都不需要10行代码）</div><div class="line"></div><div class="line">那么用Python 呢？只需要一行</div></pre></td></tr></table></figure></p>
+<p>输出 （0：100）之间的，【1X1, 2X2 ··· 100X100】中的 2 的倍数</p>
 </blockquote>
-<p>print [x * x for x in range(1, 100) if x % 2 == 0]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">Python 代码简短明确，相对来说比较好入门，适合在课余和工作之余 的时间去学习，所以大家不用担心自己没有时间。</div><div class="line"></div><div class="line">*PS. 我无意比较各语言的好坏，我知道JAVA、C++ 的运行效率比Python 高很多，我也相信有大牛能够通过其他语言只用一行代码来实现。在此只是简述Python 简短易入门。*</div><div class="line"></div><div class="line">&lt;!-- more --&gt;</div><div class="line"></div><div class="line">### Python 版本</div><div class="line">如果你有百度过Python，那么你应该知道，Python 目前有两个主要的版本:Python 2.7.X 和 Python 3.3.X，而且这两者是不完全兼容的。</div><div class="line"></div><div class="line">目前来说，Python 2.X 的教程和库更多，更好学。但Python 3.X 更先进，而且解决了Python 2.X 在使用中文的时候容易出现的编码错误问题。</div><div class="line"></div><div class="line">这里不评价哪个版本更好，但是我目前用的是 Python 2.7，因此这里所说的所有博客、教程、语法和库···都是基于Python 2.7</div><div class="line"></div><div class="line"></div><div class="line">### 开始学习吧</div><div class="line"></div><div class="line">我在学习Python 基础的时候主要参考了 [廖雪峰的Python 教程][1] ，他的博客通俗易懂，在“技术博客界”也比较出名。</div><div class="line"></div><div class="line">但是这个教程几乎涵盖了Python 的所有知识教程，如果只是需要用Python 写一个爬虫或者其他小脚本的话，实际上是不需要全部看完的（当然如果你愿意也可以）。如果你有其他语言的基础，那么可以只看个大概，了解一些基本的语法和特性就行了；如果你没有其他语言的基础，甚至对编程一窍不通，那么建议你多学习一些，最好看到“错误、调试和测试”那一章，并且一定要把其中每一篇的示例代码放到自己的编译器里跑一遍（不要复制，自己敲），这样才能理解其中的一些原理。</div><div class="line"></div><div class="line">我大学的专业是软件工程，因此有一定的C++ 基础。我大概只看到“高级特性”那一章，然后就开始学习爬虫了。</div><div class="line"></div><div class="line">## 爬虫入门</div><div class="line"></div><div class="line">&gt;网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还有蚂蚁、自动索引、模拟程序或者蠕虫。——百度百科</div><div class="line"></div><div class="line">### 网页知识简介</div><div class="line"></div><div class="line">一般来说，爬虫是获取的是网页上的内容。我们通过浏览器上网时，首先会对该网站的服务器发送一个访问请求，服务器收到请求后，把我们需要的数据传回来给到浏览器，然后浏览器解析数据并展现给我们。</div><div class="line"></div><div class="line">而这些数据在被浏览器解析之前，其实就是一些代码。我们在浏览器页面按一下F12，就能看到该网址的源代码。</div><div class="line"></div><div class="line">![](http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg)</div><div class="line"></div><div class="line">### 爬虫原理简介</div><div class="line"></div><div class="line">如果没有前端基础，那么我们可能完全看不懂这些源代码。但是，我们通过浏览器看到的文字、图片等信息，其实也包含在源代码里。</div><div class="line"></div><div class="line">比如这个页面的部分文字和图片：</div><div class="line"></div><div class="line">![](http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg)</div><div class="line"></div><div class="line">其中包含文字和图片的代码是这样的</div></pre></td></tr></table></figure></p>
-<p><div class="d_post_content j_d_post_content  clearfix" id="post_content_97130702595"><br>又要迎来活生生的小鲜肉们，又要注入新生命辣=-= 开学季需要更多交易!!房源、广告、兼职还有各色各样的寝室利器快快交易起来!!为了方便大家进行各种交易，请吧内所有【划重点】交易在此进行!!!单发将被删帖，请广大吧友注意注意注意。———————————————————————————————————本贴原则上只接受校友交易，禁止【划重点】微信代购淘宝链接等商业性质广告。允许租房信息发布、二手物品交易、正规兼职招聘（注意防范诈骗）以及正规广告发布。如果发现虚假信息和重复信息将会被删除。注意：请吧友自己鉴别真伪，吧务组不为此贴信息负责。———————————————————————————————————<br><img width="300" height="334" class="BDE_Image" style="cursor: url(http://tb2.bdstatic.com/tb/static-pb/img/cur_zin.cur), pointer;" src="http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg" size="9012"><br></div><br>```</p>
+<p>JavaScript 用了10行，C# 用了5行 （当然，这也跟他们当时的技术水平有关。一般来说，用任何语言实现这个功能应该都不需要10行代码）</p>
+<p>那么用Python 呢？只需要一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print [x * x for x in range(1, 100) if x % 2 == 0]</div></pre></td></tr></table></figure>
+<p>Python 代码简短明确，相对来说比较好入门，适合在课余和工作之余 的时间去学习，所以大家不用担心自己没有时间。</p>
+<p><em>PS. 我无意比较各语言的好坏，我知道JAVA、C++ 的运行效率比Python 高很多，我也相信有大牛能够通过其他语言只用一行代码来实现。在此只是简述Python 简短易入门。</em></p>
+<a id="more"></a>
+<h3 id="Python-版本"><a href="#Python-版本" class="headerlink" title="Python 版本"></a>Python 版本</h3><p>如果你有百度过Python，那么你应该知道，Python 目前有两个主要的版本:Python 2.7.X 和 Python 3.3.X，而且这两者是不完全兼容的。</p>
+<p>目前来说，Python 2.X 的教程和库更多，更好学。但Python 3.X 更先进，而且解决了Python 2.X 在使用中文的时候容易出现的编码错误问题。</p>
+<p>这里不评价哪个版本更好，但是我目前用的是 Python 2.7，因此这里所说的所有博客、教程、语法和库···都是基于Python 2.7</p>
+<h3 id="开始学习吧"><a href="#开始学习吧" class="headerlink" title="开始学习吧"></a>开始学习吧</h3><p>我在学习Python 基础的时候主要参考了 <a href="http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000" target="_blank" rel="external">廖雪峰的Python 教程</a> ，他的博客通俗易懂，在“技术博客界”也比较出名。</p>
+<p>但是这个教程几乎涵盖了Python 的所有知识教程，如果只是需要用Python 写一个爬虫或者其他小脚本的话，实际上是不需要全部看完的（当然如果你愿意也可以）。如果你有其他语言的基础，那么可以只看个大概，了解一些基本的语法和特性就行了；如果你没有其他语言的基础，甚至对编程一窍不通，那么建议你多学习一些，最好看到“错误、调试和测试”那一章，并且一定要把其中每一篇的示例代码放到自己的编译器里跑一遍（不要复制，自己敲），这样才能理解其中的一些原理。</p>
+<p>我大学的专业是软件工程，因此有一定的C++ 基础。我大概只看到“高级特性”那一章，然后就开始学习爬虫了。</p>
+<h2 id="爬虫入门"><a href="#爬虫入门" class="headerlink" title="爬虫入门"></a>爬虫入门</h2><blockquote>
+<p>网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还有蚂蚁、自动索引、模拟程序或者蠕虫。——百度百科</p>
+</blockquote>
+<h3 id="网页知识简介"><a href="#网页知识简介" class="headerlink" title="网页知识简介"></a>网页知识简介</h3><p>一般来说，爬虫是获取的是网页上的内容。我们通过浏览器上网时，首先会对该网站的服务器发送一个访问请求，服务器收到请求后，把我们需要的数据传回来给到浏览器，然后浏览器解析数据并展现给我们。</p>
+<p>而这些数据在被浏览器解析之前，其实就是一些代码。我们在浏览器页面按一下F12，就能看到该网址的源代码。</p>
+<p><img src="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg" alt=""></p>
+<h3 id="爬虫原理简介"><a href="#爬虫原理简介" class="headerlink" title="爬虫原理简介"></a>爬虫原理简介</h3><p>如果没有前端基础，那么我们可能完全看不懂这些源代码。但是，我们通过浏览器看到的文字、图片等信息，其实也包含在源代码里。</p>
+<p>比如这个页面的部分文字和图片：</p>
+<p><img src="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg" alt=""></p>
+<p>其中包含文字和图片的代码是这样的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;d_post_content j_d_post_content  clearfix&quot; id=&quot;post_content_97130702595&quot;&gt;         </div><div class="line">又要迎来活生生的小鲜肉们，又要注入新生命辣=-= 开学季需要更多交易!!房源、广告、兼职还有各色各样的寝室利器快快交易起来!!为了方便大家进行各种交易，请吧内所有【划重点】交易在此进行!!!单发将被删帖，请广大吧友注意注意注意。———————————————————————————————————本贴原则上只接受校友交易，禁止【划重点】微信代购淘宝链接等商业性质广告。允许租房信息发布、二手物品交易、正规兼职招聘（注意防范诈骗）以及正规广告发布。如果发现虚假信息和重复信息将会被删除。注意：请吧友自己鉴别真伪，吧务组不为此贴信息负责。———————————————————————————————————</div><div class="line">&lt;img width=&quot;300&quot; height=&quot;334&quot; class=&quot;BDE_Image&quot; style=&quot;cursor: url(http://tb2.bdstatic.com/tb/static-pb/img/cur_zin.cur), pointer;&quot; src=&quot;http://imgsrc.baidu.com/forum/w%3D580/sign=ce5a4af70b4f78f0800b9afb49300a83/6da6232eb9389b507a7534f18d35e5dde6116e06.jpg&quot; size=&quot;9012&quot;&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
 <p>也就是说，只要我们爬到了网页的源代码，那么这个网页展示出来的（甚至隐藏掉的）所有信息，我们只要从源码中筛选就能够获取。</p>
 <p>所以一般爬虫的原理其实非常简单：</p>
 <ol>
@@ -127,7 +149,7 @@ Python 基础先来点开胃菜可能对于很多人">
 <p>简单来说，你可以把API 当做一个管道接口，当你连接上这个管道接口后，你就能从中获取一些数据信息（当然，你能获取哪些信息是它说了算）。</p>
 <p>很多企业都会对外开放一些API 接口，通过这些接口，我们能更为快速、高效、便捷地获取天气、航班、股市等信息。（不只是这些公共信息，其实像QQ、微博、facebook 等都会开放一些API 接口，这样能让公司的业务更好地渗透到市场中去，也利于业务之间的合作）</p>
 <p>显然，我们也可以通过爬虫程序来连接这些API 接口，以此来获取数据信息。</p>
-<h3 id="开始学习吧"><a href="#开始学习吧" class="headerlink" title="开始学习吧"></a>开始学习吧</h3><p>我在学习爬虫的过程中主要参考的是 <a href="http://cuiqingcai.com/1052.html" target="_blank" rel="external">崔庆才的Python爬虫学习系列教程</a> ，他主要分了4个学习阶段。按照这个教程一步一步的实践，很快你就能收获一些成果了。</p>
+<h3 id="开始学习吧-1"><a href="#开始学习吧-1" class="headerlink" title="开始学习吧"></a>开始学习吧</h3><p>我在学习爬虫的过程中主要参考的是 <a href="http://cuiqingcai.com/1052.html" target="_blank" rel="external">崔庆才的Python爬虫学习系列教程</a> ，他主要分了4个学习阶段。按照这个教程一步一步的实践，很快你就能收获一些成果了。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -186,7 +208,7 @@ Python 基础先来点开胃菜可能对于很多人">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python-基础"><span class="toc-number">2.</span> <span class="toc-text">Python 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#先来点开胃菜"><span class="toc-number">2.1.</span> <span class="toc-text">先来点开胃菜</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何获取源代码"><span class="toc-number">2.2.</span> <span class="toc-text">如何获取源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API"><span class="toc-number">2.3.</span> <span class="toc-text">API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始学习吧"><span class="toc-number">2.4.</span> <span class="toc-text">开始学习吧</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python-基础"><span class="toc-number">2.</span> <span class="toc-text">Python 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#先来点开胃菜"><span class="toc-number">2.1.</span> <span class="toc-text">先来点开胃菜</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Python-版本"><span class="toc-number">2.2.</span> <span class="toc-text">Python 版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始学习吧"><span class="toc-number">2.3.</span> <span class="toc-text">开始学习吧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#爬虫入门"><span class="toc-number">3.</span> <span class="toc-text">爬虫入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#网页知识简介"><span class="toc-number">3.1.</span> <span class="toc-text">网页知识简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#爬虫原理简介"><span class="toc-number">3.2.</span> <span class="toc-text">爬虫原理简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何获取源代码"><span class="toc-number">3.3.</span> <span class="toc-text">如何获取源代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API"><span class="toc-number">3.4.</span> <span class="toc-text">API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开始学习吧-1"><span class="toc-number">3.5.</span> <span class="toc-text">开始学习吧</span></a></li></ol></li></ol>
  
   </div>
 
