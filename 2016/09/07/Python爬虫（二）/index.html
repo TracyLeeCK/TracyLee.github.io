@@ -23,7 +23,7 @@ Python 基础先来点开胃菜可能对于很多人">
 Python 基础先来点开胃菜可能对于很多人">
 <meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg">
 <meta property="og:image" content="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/36519038.jpg">
-<meta property="og:updated_time" content="2016-09-07T06:33:09.653Z">
+<meta property="og:updated_time" content="2016-09-07T06:43:29.514Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="产品经理学Python&&爬虫（二）：Python基础及爬虫入门">
 <meta name="twitter:description" content="写在前面我们在学习任何一门技术的时候，往往都会看很多技术博客，很多程序员也会写自己的技术博客。但是我想写的这些不是纯技术博客，我暂时也没有这个能力写出Python 或者爬虫相关的技术博客来。我只是作为一个初学Python 和爬虫的产品，把我学习的过程和心得记录下来，供大家参考。
@@ -125,7 +125,7 @@ Python 基础先来点开胃菜可能对于很多人">
 <h2 id="爬虫入门"><a href="#爬虫入门" class="headerlink" title="爬虫入门"></a>爬虫入门</h2><blockquote>
 <p>网络爬虫（又被称为网页蜘蛛，网络机器人，在FOAF社区中间，更经常的称为网页追逐者），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。另外一些不常使用的名字还有蚂蚁、自动索引、模拟程序或者蠕虫。——百度百科</p>
 </blockquote>
-<h3 id="网页知识简介"><a href="#网页知识简介" class="headerlink" title="网页知识简介"></a>网页知识简介</h3><p>一般来说，爬虫是获取的是网页上的内容。我们通过浏览器上网时，首先会对该网站的服务器发送一个访问请求，服务器收到请求后，把我们需要的数据传回来给到浏览器，然后浏览器解析数据并展现给我们。</p>
+<h3 id="网页知识简介"><a href="#网页知识简介" class="headerlink" title="网页知识简介"></a>网页知识简介</h3><p>一般来说，爬虫获取的是网页上的内容。我们通过浏览器上网时，首先会对该网站的服务器发送一个访问请求，服务器收到请求后，把我们需要的数据传回来给到浏览器，然后浏览器解析数据并展现给我们。</p>
 <p>而这些数据在被浏览器解析之前，其实就是一些代码。我们在浏览器页面按一下F12，就能看到该网址的源代码。</p>
 <p><img src="http://7xv5lz.com1.z0.glb.clouddn.com/16-9-7/18888251.jpg" alt=""></p>
 <h3 id="爬虫原理简介"><a href="#爬虫原理简介" class="headerlink" title="爬虫原理简介"></a>爬虫原理简介</h3><p>如果没有前端基础，那么我们可能完全看不懂这些源代码。但是，我们通过浏览器看到的文字、图片等信息，其实也包含在源代码里。</p>
@@ -141,7 +141,7 @@ Python 基础先来点开胃菜可能对于很多人">
 </ol>
 <h3 id="如何获取源代码"><a href="#如何获取源代码" class="headerlink" title="如何获取源代码"></a>如何获取源代码</h3><p>我们访问网页一般都是通过浏览器，而浏览器其实也就是一个程序而已。相应的，爬虫其实也是一个程序。</p>
 <p>因此爬虫程序（脚本）其实就是把自己伪装成一个浏览器，然后跟浏览器一样向目标网页的服务器发送访问请求，只要骗过了服务器，那么服务器就会把源码返回给你，这样你就获得该网页的源代码了。</p>
-<p><em>上面指的网页都是静态网页，不包括动态内容；源代码也只是HTML代码，不包括JS代码。爬取动态内容要更为复杂一些</em></p>
+<p><em>PS. 上面指的网页都是静态网页，不包括动态内容；源代码也只是HTML代码，不包括JS代码。爬取动态内容要更为复杂一些</em></p>
 <h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p>如果你是一个互联网从业者，那么应该听过API 这个词。</p>
 <blockquote>
 <p>API（Application Programming Interface,应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。——百度百科</p>
